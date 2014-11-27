@@ -1,11 +1,11 @@
 include $(top_srcdir)/build/vars.build.mk
 include $(top_srcdir)/build/vars.docs.mk
 
-geanyplugins_LTLIBRARIES = scope.la
+geanyplugins_LTLIBRARIES = libscope.la
 
 plugin = scope
 
-scope_la_SOURCES = \
+libscope_la_SOURCES = \
 	break.c \
 	break.h \
 	common.h \
@@ -53,9 +53,9 @@ scope_la_SOURCES = \
 	store/scptreestore.h \
 	store/scptreestore.c
 
-scope_la_LIBADD = $(COMMONLIBS) $(VTE_LIBS) $(PTY_LIBS)
+libscope_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS) $(VTE_LIBS) $(PTY_LIBS)
 
-scope_la_CFLAGS = $(AM_CFLAGS) $(VTE_CFLAGS) \
+libscope_la_CFLAGS = $(AM_CFLAGS) $(VTE_CFLAGS) \
 	-DPLUGINDATADIR=\"$(plugindatadir)\" \
 	-DPLUGINHTMLDOCDIR=\"$(plugindocdir)/html\" \
 	-Wno-shadow

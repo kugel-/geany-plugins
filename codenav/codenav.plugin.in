@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.2
+Authors=Lionel Fuentes, Federico Reghenzani
+Copyright=Copyright=Copyright © Lionel Fuentes, Federico Reghenzani
+Module=codenav
+Website=http://plugins.geany.org/codenav.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=200
+_Name=Code navigation
+_Description=This plugin adds features to facilitate navigation between source files.
+

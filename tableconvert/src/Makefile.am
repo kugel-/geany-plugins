@@ -1,12 +1,12 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = tableconvert.la
+geanyplugins_LTLIBRARIES = libtableconvert.la
 
-tableconvert_la_SOURCES = \
+libtableconvert_la_SOURCES = \
 	tableconvert.c \
 	tableconvert.h \
 	tableconvert_ui.c \
 	tableconvert_ui.h
-tableconvert_la_LIBADD = $(COMMONLIBS)
+libtableconvert_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 include $(top_srcdir)/build/cppcheck.mk

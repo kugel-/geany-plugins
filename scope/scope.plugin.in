@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.93.2
+Authors=Dimitar Toshkov Zhekov <dimitar.zhekov@gmail.com>
+Copyright=Copyright=Copyright © Dimitar Toshkov Zhekov <dimitar.zhekov@gmail.com>
+Module=scope
+Website=http://plugins.geany.org/scope.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=215
+_Name=Scope Debugger
+_Description=Relatively simple GDB front-end.
+

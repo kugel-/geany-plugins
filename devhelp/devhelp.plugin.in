@@ -1,0 +1,11 @@
+[Plugin]
+Version=1.0
+Authors=Matthew Brush <mbrush@leftclick.ca>
+Copyright=Copyright=Copyright © Matthew Brush <mbrush@leftclick.ca>
+Module=devhelp
+Website=http://plugins.geany.org/devhelp.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=200
+_Name=Devhelp Plugin
+_Description=Adds support for looking up documentation in Devhelp, manual pages, and Google Code Search in the integrated viewer.
+

@@ -1,0 +1,11 @@
+[Plugin]
+Version=1.1
+Authors=Volodymyr Kononenko <vm@kononenko.ws>
+Copyright=Copyright=Copyright © Volodymyr Kononenko <vm@kononenko.ws>
+Module=pairtaghighlighter
+Website=http://plugins.geany.org/pairtaghighlighter.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=211
+_Name=Pair Tag Highlighter
+_Description=Finds and highlights matching opening/closing HTML tag
+

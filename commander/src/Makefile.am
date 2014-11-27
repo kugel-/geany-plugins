@@ -1,16 +1,16 @@
 include $(top_srcdir)/build/vars.build.mk
 plugin = commander
 
-geanyplugins_LTLIBRARIES = commander.la
+geanyplugins_LTLIBRARIES = libcommander.la
 
 
-commander_la_SOURCES  = commander-plugin.c
-commander_la_CPPFLAGS = $(AM_CPPFLAGS) \
+libcommander_la_SOURCES  = commander-plugin.c
+libcommander_la_CPPFLAGS = $(AM_CPPFLAGS) \
                         -DPLUGIN=\"$(plugin)\" \
                         -DG_LOG_DOMAIN=\"Commander\"
-commander_la_CFLAGS   = $(AM_CFLAGS) \
+libcommander_la_CFLAGS   = $(AM_CFLAGS) \
                         $(COMMANDER_CFLAGS)
-commander_la_LIBADD   = $(COMMONLIBS) \
+libcommander_la_LIBADD   = $(PEAS_SUPPORT_LIB) $(COMMONLIBS) \
                         $(COMMANDER_LIBS)
 
 

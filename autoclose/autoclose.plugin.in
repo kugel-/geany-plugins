@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.3
+Authors=Pavel Roschin <rpg89(at)post(dot)ru>
+Copyright=Copyright=Copyright © Pavel Roschin <rpg89(at)post(dot)ru>
+Module=autoclose
+Website=http://plugins.geany.org/autoclose.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=218
+_Name=Auto-close
+_Description=Auto-close braces and brackets with lot of features
+

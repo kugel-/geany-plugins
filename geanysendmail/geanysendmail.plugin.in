@@ -1,0 +1,11 @@
+[Plugin]
+Version=1.25
+Authors=Frank Lanitz <frank@frank.uvena.de>
+Copyright=Copyright=Copyright © Frank Lanitz <frank@frank.uvena.de>
+Module=geanysendmail
+Website=http://plugins.geany.org/geanysendmail.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=199
+_Name=GeanySendMail
+_Description=A little plugin to send the current file as attachment by user's favorite mailer
+

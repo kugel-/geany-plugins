@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.7
+Authors=Frank Lanitz <frank@frank.uvena.de>
+Copyright=Copyright=Copyright © Frank Lanitz <frank@frank.uvena.de>
+Module=geanylatex
+Website=http://plugins.geany.org/geanylatex.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=217
+_Name=GeanyLaTeX
+_Description=Plugin to provide better LaTeX support
+

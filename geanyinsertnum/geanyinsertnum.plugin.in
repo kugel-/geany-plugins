@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.2.2
+Authors=Dimitar Toshkov Zhekov <dimitar.zhekov@gmail.com>
+Copyright=Copyright=Copyright © Dimitar Toshkov Zhekov <dimitar.zhekov@gmail.com>
+Module=geanyinsertnum
+Website=http://plugins.geany.org/geanyinsertnum.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=189
+_Name=Insert Numbers
+_Description=Insert/Fill columns with numbers.
+

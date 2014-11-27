@@ -1,8 +1,8 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = geanyinsertnum.la
+geanyplugins_LTLIBRARIES = libgeanyinsertnum.la
 
-geanyinsertnum_la_SOURCES = insertnum.c
-geanyinsertnum_la_LIBADD = $(COMMONLIBS)
+libgeanyinsertnum_la_SOURCES = insertnum.c
+libgeanyinsertnum_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 include $(top_srcdir)/build/cppcheck.mk

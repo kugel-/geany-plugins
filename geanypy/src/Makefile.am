@@ -1,17 +1,17 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugin_LTLIBRARIES		=	geanypy.la
+geanyplugin_LTLIBRARIES		=	libgeanypy.la
 geanyplugindir				=	$(libdir)/geany
 
-geanypy_la_LDFLAGS			=	-module -avoid-version -Wl,--export-dynamic
-geanypy_la_CPPFLAGS			=	@GEANY_CFLAGS@ @PYGTK_CFLAGS@ @PYTHON_CPPFLAGS@ \
+libgeanypy_la_LDFLAGS			=	-module -avoid-version -Wl,--export-dynamic
+libgeanypy_la_CPPFLAGS			=	@GEANY_CFLAGS@ @PYGTK_CFLAGS@ @PYTHON_CPPFLAGS@ \
 								-DGEANYPY_PYTHON_DIR="\"$(libdir)/geany/geanypy\"" \
 								-DGEANYPY_PLUGIN_DIR="\"$(datadir)/geany/geanypy/plugins\""
-geanypy_la_CFLAGS			=	@GEANYPY_CFLAGS@ @GMODULE_CFLAGS@
-geanypy_la_LIBADD			=	@GEANY_LIBS@ @PYGTK_LIBS@ @PYTHON_LDFLAGS@ \
+libgeanypy_la_CFLAGS			=	@GEANYPY_CFLAGS@ @GMODULE_CFLAGS@
+libgeanypy_la_LIBADD			=	$(PEAS_SUPPORT_LIB) @GEANY_LIBS@ @PYGTK_LIBS@ @PYTHON_LDFLAGS@ \
 								@PYTHON_EXTRA_LIBS@ @PYTHON_EXTRA_LDFLAGS@ \
 								@GMODULE_LIBS@
-geanypy_la_SOURCES			=	geanypy-app.c \
+libgeanypy_la_SOURCES			=	geanypy-app.c \
 								geanypy-dialogs.c \
 								geanypy-document.c geanypy-document.h \
 								geanypy-editor.c geanypy-editor.h \

@@ -1,11 +1,11 @@
 include $(top_srcdir)/build/vars.build.mk
 include $(top_srcdir)/build/vars.docs.mk
 
-geanyplugins_LTLIBRARIES = debugger.la
+geanyplugins_LTLIBRARIES = libdebugger.la
 
 plugin = debugger
 
-debugger_la_SOURCES = \
+libdebugger_la_SOURCES = \
 	xpm/breakpoint_condition.xpm     \
 	xpm/breakpoint_disabled.xpm     \
 	xpm/breakpoint.xpm     \
@@ -69,7 +69,7 @@ debugger_la_SOURCES = \
 	cell_renderers/cellrenderertoggle.c \
 	cell_renderers/cellrenderertoggle.h
 
-debugger_la_LIBADD = $(COMMONLIBS) $(VTE_LIBS) -lutil
-debugger_la_CFLAGS = $(AM_CFLAGS) $(VTE_CFLAGS) -DDBGPLUG_DATA_DIR=\"$(plugindatadir)\" -DPLUGIN_NAME=\"$(plugin)\"
+libdebugger_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS) $(VTE_LIBS) -lutil
+libdebugger_la_CFLAGS = $(AM_CFLAGS) $(VTE_CFLAGS) -DDBGPLUG_DATA_DIR=\"$(plugindatadir)\" -DPLUGIN_NAME=\"$(plugin)\"
 
 include $(top_srcdir)/build/cppcheck.mk

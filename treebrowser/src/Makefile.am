@@ -1,10 +1,10 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = treebrowser.la
+geanyplugins_LTLIBRARIES = libtreebrowser.la
 
-treebrowser_la_SOURCES = treebrowser.c
-treebrowser_la_CFLAGS = $(AM_CFLAGS) $(GIO_CFLAGS)
-treebrowser_la_LIBADD = $(COMMONLIBS) $(GIO_LIBS)
+libtreebrowser_la_SOURCES = treebrowser.c
+libtreebrowser_la_CFLAGS = $(AM_CFLAGS) $(GIO_CFLAGS)
+libtreebrowser_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS) $(GIO_LIBS)
 
 AM_CPPCHECKFLAGS = --suppress='deallocDealloc:$(srcdir)/treebrowser.c'
 AM_CPPCHECKFLAGS += --suppress='doubleFree:$(srcdir)/treebrowser.c'

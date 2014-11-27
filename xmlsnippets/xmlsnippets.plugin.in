@@ -1,0 +1,11 @@
+[Plugin]
+Version=1.25
+Authors=Eugene Arshinov
+Copyright=Copyright=Copyright © Eugene Arshinov
+Module=xmlsnippets
+Website=http://plugins.geany.org/xmlsnippets.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=210
+_Name=XML Snippets
+_Description=Autocompletes XML/HTML tags using snippets.
+

@@ -1,17 +1,18 @@
 include $(top_srcdir)/build/vars.build.mk
 plugin = updatechecker
 
-geanyplugins_LTLIBRARIES = updatechecker.la
+geanyplugins_LTLIBRARIES = libupdatechecker.la
 
-updatechecker_la_SOURCES = updatechecker.c
-updatechecker_la_CPPFLAGS = \
+libupdatechecker_la_SOURCES = updatechecker.c
+libupdatechecker_la_CPPFLAGS = \
 	$(AM_CPPFLAGS) \
 	-DGEANY_VERSION=\"$(GEANY_VERSION)\" \
 	-DG_LOG_DOMAIN=\"Updatechecker\"
-updatechecker_la_CFLAGS = \
+libupdatechecker_la_CFLAGS = \
 	$(AM_CFLAGS) \
 	$(UPDATECHECKER_CFLAGS)
-updatechecker_la_LIBADD = \
+libupdatechecker_la_LIBADD = \
+	$(PEAS_SUPPORT_LIB) \
 	$(COMMONLIBS) \
 	$(UPDATECHECKER_LIBS)
 

@@ -1,8 +1,8 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = geanyvc.la
+geanyplugins_LTLIBRARIES = libgeanyvc.la
 
-geanyvc_la_SOURCES = \
+libgeanyvc_la_SOURCES = \
 	externdiff.c \
 	geanyvc.c \
 	utils.c \
@@ -14,12 +14,13 @@ geanyvc_la_SOURCES = \
 	vc_svn.c \
 	geanyvc.h
 
-geanyvc_la_CFLAGS = \
+libgeanyvc_la_CFLAGS = \
 	$(AM_CFLAGS) \
 	$(GTKSPELL_CFLAGS)
 
-geanyvc_la_LIBADD = \
+libgeanyvc_la_LIBADD = \
 	$(GTKSPELL_LIBS) \
+	$(PEAS_SUPPORT_LIB) \
 	$(COMMONLIBS)
 
 include $(top_srcdir)/build/cppcheck.mk

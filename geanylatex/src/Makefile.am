@@ -1,8 +1,8 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = geanylatex.la
+geanyplugins_LTLIBRARIES = libgeanylatex.la
 
-geanylatex_la_SOURCES = \
+libgeanylatex_la_SOURCES = \
 	bibtex.c \
 	geanylatex.c \
 	latexkeybindings.h \
@@ -29,6 +29,6 @@ geanylatex_la_SOURCES = \
 	latexkeybindings.c \
 	letters.h
 
-geanylatex_la_LIBADD = $(COMMONLIBS)
+libgeanylatex_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 include $(top_srcdir)/build/cppcheck.mk

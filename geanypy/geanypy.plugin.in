@@ -1,0 +1,11 @@
+[Plugin]
+Version=1.0
+Authors=Matthew Brush <mbrush@codebrainz.ca>
+Copyright=Copyright=Copyright © Matthew Brush <mbrush@codebrainz.ca>
+Module=geanypy
+Website=http://plugins.geany.org/geanypy.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=211
+_Name=GeanyPy
+_Description=Python plugins support
+

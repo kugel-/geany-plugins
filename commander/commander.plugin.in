@@ -1,0 +1,11 @@
+[Plugin]
+Version=1.25
+Authors=Colomban Wendling <ban@herbesfolles.org>
+Copyright=Copyright=Copyright © Colomban Wendling <ban@herbesfolles.org>
+Module=commander
+Website=http://plugins.geany.org/commander.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=205
+_Name=Commander
+_Description=Provides a command panel for quick access to actions, files and more
+

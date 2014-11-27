@@ -1,8 +1,8 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = autoclose.la
+geanyplugins_LTLIBRARIES = libautoclose.la
 
-autoclose_la_SOURCES = autoclose.c
-autoclose_la_LIBADD = $(COMMONLIBS)
+libautoclose_la_SOURCES = autoclose.c
+libautoclose_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 include $(top_srcdir)/build/cppcheck.mk

@@ -1,8 +1,8 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = geanysendmail.la
+geanyplugins_LTLIBRARIES = libgeanysendmail.la
 
-geanysendmail_la_SOURCES = geanysendmail.c icon.h
-geanysendmail_la_LIBADD = $(COMMONLIBS)
+libgeanysendmail_la_SOURCES = geanysendmail.c icon.h
+libgeanysendmail_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 include $(top_srcdir)/build/cppcheck.mk

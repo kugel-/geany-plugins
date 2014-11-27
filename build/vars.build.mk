@@ -14,3 +14,5 @@ AM_LDFLAGS = -module -avoid-version $(GP_LDFLAGS)
 COMMONLIBS = \
 	$(GEANY_LIBS) \
 	$(INTLLIBS)
+
+PEAS_SUPPORT_LIB = $(top_builddir)/peas-support/libpeas-support.la

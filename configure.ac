@@ -69,6 +69,7 @@ GP_CHECK_XMLSNIPPETS
 AC_CONFIG_FILES([
     Makefile
     po/Makefile.in
+    peas-support/Makefile
 ])
 AC_OUTPUT
 GP_STATUS_PRINT

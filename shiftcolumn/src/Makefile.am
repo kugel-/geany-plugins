@@ -1,8 +1,8 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = shiftcolumn.la
+geanyplugins_LTLIBRARIES = libshiftcolumn.la
 
-shiftcolumn_la_SOURCES = shiftcolumn.c
-shiftcolumn_la_LIBADD = $(COMMONLIBS)
+libshiftcolumn_la_SOURCES = shiftcolumn.c
+libshiftcolumn_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 include $(top_srcdir)/build/cppcheck.mk

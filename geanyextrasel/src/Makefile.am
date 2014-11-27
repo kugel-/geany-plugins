@@ -1,8 +1,8 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = geanyextrasel.la
+geanyplugins_LTLIBRARIES = libgeanyextrasel.la
 
-geanyextrasel_la_SOURCES = extrasel.c
-geanyextrasel_la_LIBADD = $(COMMONLIBS)
+libgeanyextrasel_la_SOURCES = extrasel.c
+libgeanyextrasel_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 include $(top_srcdir)/build/cppcheck.mk

@@ -1,13 +1,13 @@
 include $(top_srcdir)/build/vars.build.mk
 plugin = pohelper
 
-geanyplugins_LTLIBRARIES = pohelper.la
+geanyplugins_LTLIBRARIES = libpohelper.la
 
 
-pohelper_la_SOURCES  = gph-plugin.c
-pohelper_la_CPPFLAGS = $(AM_CPPFLAGS) \
+libpohelper_la_SOURCES  = gph-plugin.c
+libpohelper_la_CPPFLAGS = $(AM_CPPFLAGS) \
                         -DG_LOG_DOMAIN=\"PoHelper\"
-pohelper_la_CFLAGS   = $(AM_CFLAGS)
-pohelper_la_LIBADD   = $(COMMONLIBS)
+libpohelper_la_CFLAGS   = $(AM_CFLAGS)
+libpohelper_la_LIBADD   = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 include $(top_srcdir)/build/cppcheck.mk

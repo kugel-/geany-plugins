@@ -1,0 +1,11 @@
+[Plugin]
+Version=1.25
+Authors=Jiri Techet <techet@gmail.com>
+Copyright=Copyright=Copyright © Jiri Techet <techet@gmail.com>
+Module=geanyctags
+Website=http://plugins.geany.org/geanyctags.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=211
+_Name=GeanyCtags
+_Description=Ctags generation and search plugin for geany projects
+

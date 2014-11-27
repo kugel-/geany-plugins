@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.1
+Authors=Colomban Wendling <ban@herbesfolles.org>
+Copyright=Copyright=Copyright © Colomban Wendling <ban@herbesfolles.org>
+Module=pohelper
+Website=http://plugins.geany.org/pohelper.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=211
+_Name=Translation Helper
+_Description=Improves support for GetText translation files.
+

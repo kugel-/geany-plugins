@@ -1,17 +1,18 @@
 include $(top_srcdir)/build/vars.build.mk
 plugin = geniuspaste
 
-geanyplugins_LTLIBRARIES = geniuspaste.la
+geanyplugins_LTLIBRARIES = libgeniuspaste.la
 
-geniuspaste_la_SOURCES = geniuspaste.c
-geniuspaste_la_CPPFLAGS = \
+libgeniuspaste_la_SOURCES = geniuspaste.c
+libgeniuspaste_la_CPPFLAGS = \
 	$(AM_CPPFLAGS) \
 	-DGEANY_VERSION=\"$(GEANY_VERSION)\" \
 	-DG_LOG_DOMAIN=\"GeniusPaste\"
-geniuspaste_la_CFLAGS = \
+libgeniuspaste_la_CFLAGS = \
 	$(AM_CFLAGS) \
 	$(GENIUSPASTE_CFLAGS)
-geniuspaste_la_LIBADD = \
+libgeniuspaste_la_LIBADD = \
+	$(PEAS_SUPPORT_LIB) \
 	$(COMMONLIBS) \
 	$(GENIUSPASTE_LIBS)
 

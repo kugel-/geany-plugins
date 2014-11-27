@@ -5,11 +5,11 @@ plugin = geanylua
 
 EXTRA_DIST += util
 
-geanyplugins_LTLIBRARIES = geanylua.la
+geanyplugins_LTLIBRARIES = libgeanyluaplugin.la
 geanyluadir = $(pkglibdir)/geanylua
 geanylua_LTLIBRARIES = libgeanylua.la
 
-geanylua_la_SOURCES = geanylua.c
+libgeanyluaplugin_la_SOURCES = geanylua.c
 libgeanylua_la_SOURCES = \
 	glspi_app.c \
 	glspi_dlg.c \
@@ -26,18 +26,18 @@ libgeanylua_la_SOURCES = \
 	glspi_ver.h \
 	gsdlg.h
 
-geanylua_la_CFLAGS = \
+libgeanylua_la_CFLAGS = \
 	$(AM_CFLAGS) \
 	$(GMODULE_CFLAGS) \
 	$(LUA_CFLAGS)
 
-geanylua_la_LIBADD = \
+libgeanylua_la_LIBADD = \
 	$(COMMONLIBS) \
 	$(GMODULE_LIBS) \
 	$(LUA_LIBS)
 
-libgeanylua_la_CFLAGS = $(geanylua_la_CFLAGS)
-libgeanylua_la_LIBADD = $(geanylua_la_LIBADD)
+libgeanyluaplugin_la_CFLAGS = $(libgeanylua_la_CFLAGS)
+libgeanyluaplugin_la_LIBADD = $(PEAS_SUPPORT_LIB) $(libexport_la_LIBADD)
 
 SUBDIRS = docs examples
 

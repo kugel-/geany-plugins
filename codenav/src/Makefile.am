@@ -1,8 +1,8 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = codenav.la
+geanyplugins_LTLIBRARIES = libcodenav.la
 
-codenav_la_SOURCES = \
+libcodenav_la_SOURCES = \
 	codenavigation.c \
 	codenavigation.h \
 	goto_file.c \
@@ -12,7 +12,7 @@ codenav_la_SOURCES = \
 	utils.c \
 	utils.h
 
-codenav_la_LIBADD = $(COMMONLIBS)
+libcodenav_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 
 include $(top_srcdir)/build/cppcheck.mk

@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.2
+Authors=Colomban Wendling <ban@herbesfolles.org>
+Copyright=Copyright=Copyright © Colomban Wendling <ban@herbesfolles.org>
+Module=webhelper
+Website=http://plugins.geany.org/webhelper.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=195
+_Name=Web helper
+_Description=Display a preview web page that gets updated upon document saving and provide web analysis and debugging tools (aka Web Inspector), all using WebKit.
+

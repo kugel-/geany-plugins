@@ -1,8 +1,8 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = defineformat.la
+geanyplugins_LTLIBRARIES = libdefineformat.la
 
-defineformat_la_SOURCES = defineformat.c
-defineformat_la_LIBADD = $(COMMONLIBS)
+libdefineformat_la_SOURCES = defineformat.c
+libdefineformat_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 include $(top_srcdir)/build/cppcheck.mk

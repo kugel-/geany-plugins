@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.52
+Authors=Dimitar Toshkov Zhekov <dimitar.zhekov@gmail.com>
+Copyright=Copyright=Copyright © Dimitar Toshkov Zhekov <dimitar.zhekov@gmail.com>
+Module=geanyextrasel
+Website=http://plugins.geany.org/geanyextrasel.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=189
+_Name=Extra Selection
+_Description=Column mode, select to line / brace / anchor.
+

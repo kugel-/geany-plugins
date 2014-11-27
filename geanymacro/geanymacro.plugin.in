@@ -1,0 +1,11 @@
+[Plugin]
+Version=1.1
+Authors=William Fraser <william.fraser@virgin.net>
+Copyright=Copyright=Copyright © William Fraser <william.fraser@virgin.net>
+Module=geanymacro
+Website=http://plugins.geany.org/geanymacro.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=147
+_Name=Macros
+_Description=Macros for Geany
+

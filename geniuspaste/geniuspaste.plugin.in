@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.2
+Authors=Enrico Trotta <enrico.trt@gmail.com>
+Copyright=Copyright=Copyright © Enrico Trotta <enrico.trt@gmail.com>
+Module=geniuspaste
+Website=http://plugins.geany.org/geniuspaste.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=147
+_Name=GeniusPaste
+_Description=Paste your code on your favorite pastebin
+

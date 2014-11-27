@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.1
+Authors=Pavel Roschin <rpg89(at)post(dot)ru>
+Copyright=Copyright=Copyright © Pavel Roschin <rpg89(at)post(dot)ru>
+Module=defineformat
+Website=http://plugins.geany.org/defineformat.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=216
+_Name=Define formatter
+_Description=Automatically align backslash in multi-line defines
+

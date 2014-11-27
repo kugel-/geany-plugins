@@ -2,9 +2,9 @@ include $(top_srcdir)/build/vars.build.mk
 
 plugin = devhelp
 
-geanyplugins_LTLIBRARIES = devhelp.la
+geanyplugins_LTLIBRARIES = libdevhelp.la
 
-devhelp_la_SOURCES = \
+libdevhelp_la_SOURCES = \
 	dhp-manpages.c \
 	dhp-object.c \
 	dhp-plugin.c
@@ -16,14 +16,14 @@ noinst_HEADERS = \
 	dhp.h \
 	dhp-plugin.h
 
-devhelp_la_CFLAGS = \
+libdevhelp_la_CFLAGS = \
 	$(AM_CFLAGS) \
 	-I$(top_srcdir)/devhelp \
 	$(DEVHELP_CFLAGS) \
 	-DDHPLUG_DATA_DIR=\"$(plugindatadir)\" \
 	-DHAVE_BOOK_MANAGER=1
 
-devhelp_la_LIBADD = \
+libdevhelp_la_LIBADD = $(PEAS_SUPPORT_LIB) \
 	$(DEVHELP_LIBS) \
 	$(top_builddir)/devhelp/devhelp/libdevhelp-2.la
 

@@ -1,8 +1,8 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = geanymacro.la
+geanyplugins_LTLIBRARIES = libgeanymacro.la
 
-geanymacro_la_SOURCES = geanymacro.c
-geanymacro_la_LIBADD = $(COMMONLIBS)
+libgeanymacro_la_SOURCES = geanymacro.c
+libgeanymacro_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 include $(top_srcdir)/build/cppcheck.mk

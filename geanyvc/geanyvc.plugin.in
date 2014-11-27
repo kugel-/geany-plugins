@@ -1,0 +1,11 @@
+[Plugin]
+Version=1.25
+Authors=Yura Siamashka <yurand2@gmail.com>, Frank Lanitz <frank@frank.uvena.de>
+Copyright=Copyright=Copyright © Yura Siamashka <yurand2@gmail.com>, Frank Lanitz <frank@frank.uvena.de>
+Module=geanyvc
+Website=http://plugins.geany.org/geanyvc.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=188
+_Name=GeanyVC
+_Description=Interface to different Version Control systems.
+

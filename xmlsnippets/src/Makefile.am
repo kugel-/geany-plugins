@@ -1,16 +1,16 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = xmlsnippets.la
+geanyplugins_LTLIBRARIES = libxmlsnippets.la
 
 check_PROGRAMS = xmlsnippets-check
 
 common_sources = xmlsnippets.c xmlsnippets.h
 
-xmlsnippets_la_SOURCES = \
+libxmlsnippets_la_SOURCES = \
 	plugin.c plugin.h \
 	$(common_sources)
 
-xmlsnippets_la_LIBADD = $(COMMONLIBS)
+libxmlsnippets_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 xmlsnippets_check_SOURCES = \
 	tests.c \

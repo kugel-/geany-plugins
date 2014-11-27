@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.1
+Authors=Hans Alves <alves.h88@gmail.com>
+Copyright=Copyright=Copyright © Hans Alves <alves.h88@gmail.com>
+Module=geanypg
+Website=http://plugins.geany.org/geanypg.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=201
+_Name=GeanyPG
+_Description=gpg encryption plugin for geany
+

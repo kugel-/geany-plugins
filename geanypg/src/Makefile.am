@@ -1,8 +1,8 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = geanypg.la
+geanyplugins_LTLIBRARIES = libgeanypg.la
 
-geanypg_la_SOURCES = \
+libgeanypg_la_SOURCES = \
 	helper_functions.c \
 	encrypt_cb.c \
 	key_selection_dialog.c \
@@ -14,11 +14,12 @@ geanypg_la_SOURCES = \
 	pinentry.c \
 	verify_aux.c
 
-geanypg_la_LIBADD = \
+libgeanypg_la_LIBADD = \
+	$(PEAS_SUPPORT_LIB) \
 	$(COMMONLIBS) \
 	$(GPGME_LIBS)
 
-geanypg_la_CFLAGS = \
+libgeanypg_la_CFLAGS = \
 	$(AM_CFLAGS) \
 	$(GPGME_CFLAGS)
 

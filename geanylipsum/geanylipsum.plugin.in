@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.4.4
+Authors=Frank Lanitz <frank@frank.uvena.de>
+Copyright=Copyright=Copyright © Frank Lanitz <frank@frank.uvena.de>
+Module=geanylipsum
+Website=http://plugins.geany.org/geanylipsum.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=188
+_Name=GeanyLipsum
+_Description=Creating dummy text with Geany
+

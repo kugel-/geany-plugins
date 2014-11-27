@@ -1,0 +1,11 @@
+[Plugin]
+Version=1.25
+Authors=Andrew L Janke <a.janke@gmail.com>
+Copyright=Copyright=Copyright © Andrew L Janke <a.janke@gmail.com>
+Module=shiftcolumn
+Website=http://plugins.geany.org/shiftcolumn.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=130
+_Name=Shift Column
+_Description=Shift a selection left and right
+

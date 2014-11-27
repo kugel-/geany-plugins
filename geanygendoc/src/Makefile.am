@@ -1,9 +1,9 @@
 include $(top_srcdir)/build/vars.build.mk
 plugin = geanygendoc
 
-geanyplugins_LTLIBRARIES = geanygendoc.la
+geanyplugins_LTLIBRARIES = libgeanygendoc.la
 
-geanygendoc_la_SOURCES = \
+libgeanygendoc_la_SOURCES = \
 	ggd.c \
 	ggd-doc-setting.c \
 	ggd-doc-type.c \
@@ -32,13 +32,14 @@ noinst_HEADERS = \
 	ggd-widget-frame.h \
 	ggd-widget-doctype-selector.h
 
-geanygendoc_la_CPPFLAGS = -DG_LOG_DOMAIN=\"GeanyGenDoc\"
+libgeanygendoc_la_CPPFLAGS = -DG_LOG_DOMAIN=\"GeanyGenDoc\"
 
-geanygendoc_la_CFLAGS = \
+libgeanygendoc_la_CFLAGS = \
 	$(AM_CFLAGS) \
 	$(GEANYGENDOC_CFLAGS)
 
-geanygendoc_la_LIBADD = \
+libgeanygendoc_la_LIBADD = \
+	$(PEAS_SUPPORT_LIB) \
 	$(COMMONLIBS) \
 	$(GEANYGENDOC_LIBS)
 

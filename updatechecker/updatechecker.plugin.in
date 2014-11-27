@@ -1,0 +1,11 @@
+[Plugin]
+Version=1.25
+Authors=Frank Lanitz <frank@frank.uvena.de>
+Copyright=Copyright=Copyright © Frank Lanitz <frank@frank.uvena.de>
+Module=updatechecker
+Website=http://plugins.geany.org/updatechecker.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=203
+_Name=Updatechecker
+_Description=A plugin which is checking whether there are updates for Geany available.
+

@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.1
+Authors=Pavel Roschin <rpg89(at)post(dot)ru>
+Copyright=Copyright=Copyright © Pavel Roschin <rpg89(at)post(dot)ru>
+Module=automark
+Website=http://plugins.geany.org/automark.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=216
+_Name=Auto-mark
+_Description=Auto-mark word under cursor
+

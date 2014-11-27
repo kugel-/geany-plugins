@@ -1,7 +1,7 @@
 include $(top_srcdir)/build/vars.build.mk
 plugin = webhelper
 
-geanyplugins_LTLIBRARIES = webhelper.la
+geanyplugins_LTLIBRARIES = libwebhelper.la
 
 
 GLIB_MKENUMS = @GLIB_MKENUMS@
@@ -24,16 +24,17 @@ EXTRA_DIST      = gwh-enum-types.c.tpl \
                   gwh-enum-types.h.tpl
 
 
-webhelper_la_SOURCES  = $(autogen_sources) \
+libwebhelper_la_SOURCES  = $(autogen_sources) \
                         $(autogen_headers) \
                         $(sources) \
                         $(headers)
-webhelper_la_CPPFLAGS = $(AM_CPPFLAGS) \
+libwebhelper_la_CPPFLAGS = $(AM_CPPFLAGS) \
                         -I$(srcdir) -I$(builddir) \
                         -DG_LOG_DOMAIN=\"WebHelper\"
-webhelper_la_CFLAGS   = $(AM_CFLAGS) \
+libwebhelper_la_CFLAGS   = $(AM_CFLAGS) \
                         $(WEBHELPER_CFLAGS)
-webhelper_la_LIBADD   = $(COMMONLIBS) \
+libwebhelper_la_LIBADD   = $(PEAS_SUPPORT_LIB) \
+                        $(COMMONLIBS) \
                         $(WEBHELPER_LIBS)
 
 # These are generated in $(srcdir) because they are part of the distribution,

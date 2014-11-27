@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.1
+Authors=Pascal BURLOT, a Geany user
+Copyright=Copyright=Copyright © Pascal BURLOT, a Geany user
+Module=geanyminiscript
+Website=http://plugins.geany.org/geanyminiscript.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=100
+_Name=Mini Script
+_Description=A tool to apply a script filter on a text selection or current document(s)
+

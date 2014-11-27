@@ -1,8 +1,8 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = spellcheck.la
+geanyplugins_LTLIBRARIES = libspellcheck.la
 
-spellcheck_la_SOURCES = \
+libspellcheck_la_SOURCES = \
 	scplugin.h \
 	speller.h \
 	gui.h \
@@ -10,15 +10,16 @@ spellcheck_la_SOURCES = \
 	speller.c \
 	scplugin.c
 
-spellcheck_la_CFLAGS = \
+libspellcheck_la_CFLAGS = \
 	$(AM_CFLAGS) \
 	$(ENCHANT_CFLAGS)
 
 if HAVE_ENCHANT_1_5
-spellcheck_la_CFLAGS += -DHAVE_ENCHANT_1_5
+libspellcheck_la_CFLAGS += -DHAVE_ENCHANT_1_5
 endif
 
-spellcheck_la_LIBADD = \
+libspellcheck_la_LIBADD = \
+	$(PEAS_SUPPORT_LIB) \
 	$(COMMONLIBS) \
 	$(ENCHANT_LIBS)
 

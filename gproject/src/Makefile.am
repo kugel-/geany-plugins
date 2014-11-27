@@ -1,8 +1,8 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = gproject.la
+geanyplugins_LTLIBRARIES = libgproject.la
 
-gproject_la_SOURCES = \
+libgproject_la_SOURCES = \
 	gproject-main.c \
 	gproject-project.h \
 	gproject-project.c \
@@ -13,8 +13,8 @@ gproject_la_SOURCES = \
 	gproject-menu.h \
 	gproject-menu.c
 
-gproject_la_CFLAGS = $(AM_CFLAGS)
-gproject_la_LIBADD = $(COMMONLIBS)
+libgproject_la_CFLAGS = $(AM_CFLAGS)
+libgproject_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 include $(top_srcdir)/build/cppcheck.mk
 

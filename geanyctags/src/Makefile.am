@@ -1,12 +1,12 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = geanyctags.la
+geanyplugins_LTLIBRARIES = libgeanyctags.la
 
-geanyctags_la_SOURCES = \
+libgeanyctags_la_SOURCES = \
 	geanyctags.c \
 	readtags.h \
 	readtags.c
 
-geanyctags_la_LIBADD = $(COMMONLIBS)
+libgeanyctags_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 include $(top_srcdir)/build/cppcheck.mk

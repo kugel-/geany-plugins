@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.1
+Authors=Matthew Brush <matt@geany.org>
+Copyright=Copyright=Copyright © Matthew Brush <matt@geany.org>
+Module=multiterm
+Website=http://plugins.geany.org/multiterm.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=185
+_Name=MultiTerm
+_Description=Multi-tabbed virtual terminal emulator.
+

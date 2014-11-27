@@ -1,8 +1,8 @@
 include $(top_srcdir)/build/vars.build.mk
 
-geanyplugins_LTLIBRARIES = addons.la
+geanyplugins_LTLIBRARIES = libaddons.la
 
-addons_la_SOURCES = \
+libaddons_la_SOURCES = \
 	addons.h \
 	ao_blanklines.h \
 	ao_doclist.h \
@@ -24,6 +24,6 @@ addons_la_SOURCES = \
 	ao_xmltagging.c \
 	ao_wrapwords.c
 
-addons_la_LIBADD = $(COMMONLIBS)
+libaddons_la_LIBADD = $(PEAS_SUPPORT_LIB) $(COMMONLIBS)
 
 include $(top_srcdir)/build/cppcheck.mk

@@ -1,0 +1,11 @@
+[Plugin]
+Version=0.20
+Authors=Adrian Dimitrov (dimitrov.adrian@gmail.com)
+Copyright=Copyright=Copyright © Adrian Dimitrov (dimitrov.adrian@gmail.com)
+Module=treebrowser
+Website=http://plugins.geany.org/treebrowser.html
+X-Geany-ABI=@GEANY_ABI_VERSION@
+X-Geany-API=188
+_Name=TreeBrowser
+_Description=This plugin adds a tree browser to Geany, allowing the user to browse files using a tree view of the directory being browsed.
+
